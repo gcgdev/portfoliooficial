@@ -1,1 +1,108 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GCGDEV | Contato</title><meta name="description" content="Formulario curto para resumir objetivo, budget e prazo e abrir o WhatsApp com a mensagem pronta."><meta property="og:title" content="GCGDEV | Contato"><meta property="og:description" content="Resumo rapido do projeto com objetivo, budget e prazo para enviar via WhatsApp."><meta property="og:type" content="website"><link rel="canonical" href="/"><meta property="og:url" content="/"><link rel="stylesheet" href="../assets/css/main.css"><script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGDBN2L37"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TWGDBN2L37');</script><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1304637464933404');fbq('track','PageView');</script></head><body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1304637464933404&ev=PageView&noscript=1" /></noscript><a class="skip-link" href="#conteudo">Pular para o conteudo</a><header class="site-header"><div class="container header-bar"><a class="brand" href="../index.html" aria-label="GCGDEV"><span class="brand-mark" aria-hidden="true"></span><span>GCGDEV</span></a><nav class="site-nav" aria-label="Navegacao principal"><a href="../index.html#demos">Demos</a><a href="./services.html">Servicos</a><a href="./process.html">Processo</a><a href="./pricing.html">Precos</a><a href="./contact.html" aria-current="page">Contato</a><a class="button button-secondary" href="../en/pages/contact.html" lang="en" hreflang="en">EN</a><a class="button button-primary" href="https://wa.me/5512997321701" data-wa-context="quote">WhatsApp</a></nav></div></header><main id="conteudo" class="page-hero"><section class="section"><div class="container page-shell"><article class="card page-intro" data-reveal><p class="eyebrow">Contato</p><h1>Resuma objetivo, budget e prazo em menos de um minuto.</h1><p class="page-subtitle">Formulario curto, resumo automatico e mensagem pronta para abrir a conversa certa no WhatsApp.</p></article><div class="contact-grid"><section class="card" data-reveal aria-labelledby="contact-form-title"><div class="page-intro"><p class="eyebrow" id="contact-form-title">Formulario</p><h2>O basico para estimar direcao e faixa de investimento.</h2></div><form class="contact-form" id="contact-form"><div class="form-grid"><div class="form-field"><label for="contact-name">Nome</label><input id="contact-name" name="name" type="text" placeholder="Seu nome" required></div><div class="form-field"><label for="contact-channel">Contato</label><input id="contact-channel" name="channel" type="text" placeholder="WhatsApp ou e-mail" required></div></div><div class="form-grid"><div class="form-field"><label for="contact-goal">Objetivo</label><input id="contact-goal" name="goal" type="text" placeholder="Ex.: captar mais leads" required></div><div class="form-field"><label for="contact-budget">Budget</label><input id="contact-budget" name="budget" type="text" placeholder="Ex.: R$ 3k a R$ 5k" required></div></div><div class="form-grid"><div class="form-field"><label for="contact-deadline">Prazo</label><input id="contact-deadline" name="deadline" type="text" placeholder="Ex.: este mes" required></div><div class="form-field"><label for="contact-scope">Resumo</label><textarea id="contact-scope" name="scope" placeholder="Descreva o que precisa entrar no projeto." required></textarea></div></div><div class="contact-actions"><button class="button button-primary" type="submit">Gerar resumo</button><a class="button button-secondary" href="https://wa.me/5512997321701" data-wa-context="quote">Abrir WhatsApp direto</a></div><p class="contact-status" id="contact-status" aria-live="polite"></p></form></section><aside class="summary-box card" id="contact-summary" hidden data-reveal><p class="eyebrow">Resumo</p><h3>Pronto para enviar.</h3><ul class="summary-list" id="summary-list"></ul><p class="summary-help">Ao clicar abaixo, o texto e copiado e o WhatsApp abre com o pedido de cotacao pronto.</p><div class="contact-actions"><button class="button button-primary" type="button" id="send-whatsapp">Enviar no WhatsApp</button><button class="button button-secondary" type="button" id="copy-summary">Copiar resumo</button></div></aside></div></div></section></main><footer class="site-footer"><div class="container footer-bar"><div><strong>GCGDEV</strong><p>Resumo rapido para iniciar a conversa com objetivo, budget e prazo claros.</p></div><nav class="footer-nav" aria-label="Links do rodape"><a href="./services.html">Servicos</a><a href="./process.html">Processo</a><a href="./pricing.html">Precos</a><a href="./contact.html">Contato</a><a href="./privacy.html">Privacidade</a></nav></div></footer><script src="../assets/js/main.js" defer></script><script>(function(){const form=document.getElementById("contact-form");const status=document.getElementById("contact-status");const summaryBox=document.getElementById("contact-summary");const summaryList=document.getElementById("summary-list");const sendButton=document.getElementById("send-whatsapp");const copyButton=document.getElementById("copy-summary");let summaryText="";function copyText(text,successMessage){if(!text){return Promise.resolve(false);}if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(text).then(()=>{status.textContent=successMessage;return true;}).catch(()=>false);}return Promise.resolve(false);}form.addEventListener("submit",(event)=>{event.preventDefault();const data=new FormData(form);const values={name:String(data.get("name")||"").trim(),channel:String(data.get("channel")||"").trim(),goal:String(data.get("goal")||"").trim(),budget:String(data.get("budget")||"").trim(),deadline:String(data.get("deadline")||"").trim(),scope:String(data.get("scope")||"").trim()};if(!values.name||!values.channel||!values.goal||!values.budget||!values.deadline||!values.scope){status.textContent="Preencha todos os campos para gerar o resumo.";return;}summaryText=["Oi! Quero uma cotacao.",`Objetivo: ${values.goal}`,`Prazo: ${values.deadline}`,`Orcamento faixa: ${values.budget}`,`Nome: ${values.name}`,`Contato: ${values.channel}`,`Contexto: ${values.scope}`].join("\n");summaryList.innerHTML="";Object.entries(values).forEach(([key,value])=>{const labelMap={name:"Nome",channel:"Contato",goal:"Objetivo",budget:"Budget",deadline:"Prazo",scope:"Resumo"};const item=document.createElement("li");item.textContent=`${labelMap[key]}: ${value}`;summaryList.appendChild(item);});summaryBox.hidden=false;status.textContent="Resumo gerado.";});copyButton.addEventListener("click",()=>{copyText(summaryText,"Resumo copiado.");});sendButton.addEventListener("click",async()=>{const copied=await copyText(summaryText,"Resumo copiado e WhatsApp aberto.");const whatsappUrl=window.SiteApp&&typeof window.SiteApp.getWhatsAppUrl==="function"?window.SiteApp.getWhatsAppUrl(summaryText):`https://wa.me/5512997321701?text=${encodeURIComponent(summaryText)}`;if(!copied){status.textContent="WhatsApp aberto com a mensagem pronta.";}window.open(whatsappUrl,"_blank","noopener");});}());</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador de Sites e Landing Pages Profissionais | GCGDEV</title>
+    <meta name="description" content="Fale com um programador de sites para criar site profissional, site institucional ou landing page com foco em venda.">
+    <meta property="og:title" content="Programador de Sites e Landing Pages Profissionais | GCGDEV">
+    <meta property="og:description" content="Fale com um programador de sites para criar site profissional, site institucional ou landing page com foco em venda.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://gcgdev.com.br/pages/contact.html">
+    <meta property="og:url" content="https://gcgdev.com.br/pages/contact.html">
+    <link rel="preload" href="../assets/css/main.css?v=20260302" as="style">
+    <link rel="stylesheet" href="../assets/css/main.css?v=20260302" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/main.css?v=20260302"></noscript>
+    
+</head>
+
+<body><a
+        class="skip-link" href="#conteudo">Pular para o conteudo</a>
+    <header class="site-header">
+        <div class="container header-bar"><a class="brand" href="../index.html" aria-label="GCGDEV"><span
+                    class="brand-mark" aria-hidden="true"></span><span>GCGDEV</span></a>
+            <nav class="site-nav" aria-label="Navegacao principal"><a href="../index.html#demos">Demos</a><a
+                    href="./services.html">Servicos</a><a href="./process.html">Processo</a><a
+                    href="./pricing.html">Precos</a><a href="./contact.html" aria-current="page">Contato</a><a
+                    class="button button-secondary" href="../en/pages/contact.html" lang="en" hreflang="en">EN</a><a
+                    class="button button-primary" href="https://wa.me/5512997321701"
+                    data-wa-context="quote">WhatsApp</a></nav>
+        </div>
+    </header>
+    <main id="conteudo" class="page-hero">
+        <section class="section">
+            <div class="container page-shell">
+                <article class="card page-intro" data-reveal>
+                    <p class="eyebrow">Contato</p>
+                    <h1>Resuma objetivo, budget e prazo em menos de um minuto.</h1>
+                    <p class="page-subtitle">Formulario curto, resumo automatico e mensagem pronta para abrir a conversa
+                        certa no WhatsApp.</p>
+                </article>
+                <div class="contact-grid">
+                    <section class="card" data-reveal aria-labelledby="contact-form-title">
+                        <div class="page-intro">
+                            <p class="eyebrow" id="contact-form-title">Formulario</p>
+                            <h2>O basico para estimar direcao e faixa de investimento.</h2>
+                        </div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-grid">
+                                <div class="form-field"><label for="contact-name">Nome</label><input id="contact-name"
+                                        name="name" type="text" placeholder="Seu nome" required></div>
+                                <div class="form-field"><label for="contact-channel">Contato</label><input
+                                        id="contact-channel" name="channel" type="text" placeholder="WhatsApp ou e-mail"
+                                        required></div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-field"><label for="contact-goal">Objetivo</label><input
+                                        id="contact-goal" name="goal" type="text" placeholder="Ex.: captar mais leads"
+                                        required></div>
+                                <div class="form-field"><label for="contact-budget">Budget</label><input
+                                        id="contact-budget" name="budget" type="text" placeholder="Ex.: R$ 3k a R$ 5k"
+                                        required></div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-field"><label for="contact-deadline">Prazo</label><input
+                                        id="contact-deadline" name="deadline" type="text" placeholder="Ex.: este mes"
+                                        required></div>
+                                <div class="form-field"><label for="contact-scope">Resumo</label><textarea
+                                        id="contact-scope" name="scope"
+                                        placeholder="Descreva o que precisa entrar no projeto." required></textarea>
+                                </div>
+                            </div>
+                            <div class="contact-actions"><button class="button button-primary" type="submit">Gerar
+                                    resumo</button><a class="button button-secondary" href="https://wa.me/5512997321701"
+                                    data-wa-context="quote">Abrir WhatsApp direto</a></div>
+                            <p class="contact-status" id="contact-status" aria-live="polite"></p>
+                        </form>
+                    </section>
+                    <aside class="summary-box card" id="contact-summary" hidden data-reveal>
+                        <p class="eyebrow">Resumo</p>
+                        <h3>Pronto para enviar.</h3>
+                        <ul class="summary-list" id="summary-list"></ul>
+                        <p class="summary-help">Ao clicar abaixo, o texto e copiado e o WhatsApp abre com o pedido de
+                            cotacao pronto.</p>
+                        <div class="contact-actions"><button class="button button-primary" type="button"
+                                id="send-whatsapp">Enviar no WhatsApp</button><button class="button button-secondary"
+                                type="button" id="copy-summary">Copiar resumo</button></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-bar">
+            <div><strong>GCGDEV</strong>
+                <p>Resumo rapido para iniciar a conversa com objetivo, budget e prazo claros.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Links do rodape"><a href="./services.html">Servicos</a><a
+                    href="./process.html">Processo</a><a href="./pricing.html">Precos</a><a
+                    href="./contact.html">Contato</a><a href="./privacy.html">Privacidade</a></nav>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js" defer></script>
+    <script>(function () { const form = document.getElementById("contact-form"); const status = document.getElementById("contact-status"); const summaryBox = document.getElementById("contact-summary"); const summaryList = document.getElementById("summary-list"); const sendButton = document.getElementById("send-whatsapp"); const copyButton = document.getElementById("copy-summary"); let summaryText = ""; function copyText(text, successMessage) { if (!text) { return Promise.resolve(false); } if (navigator.clipboard && navigator.clipboard.writeText) { return navigator.clipboard.writeText(text).then(() => { status.textContent = successMessage; return true; }).catch(() => false); } return Promise.resolve(false); } form.addEventListener("submit", (event) => { event.preventDefault(); const data = new FormData(form); const values = { name: String(data.get("name") || "").trim(), channel: String(data.get("channel") || "").trim(), goal: String(data.get("goal") || "").trim(), budget: String(data.get("budget") || "").trim(), deadline: String(data.get("deadline") || "").trim(), scope: String(data.get("scope") || "").trim() }; if (!values.name || !values.channel || !values.goal || !values.budget || !values.deadline || !values.scope) { status.textContent = "Preencha todos os campos para gerar o resumo."; return; } summaryText = ["Oi! Quero uma cotacao.", `Objetivo: ${values.goal}`, `Prazo: ${values.deadline}`, `Orcamento faixa: ${values.budget}`, `Nome: ${values.name}`, `Contato: ${values.channel}`, `Contexto: ${values.scope}`].join("\n"); summaryList.innerHTML = ""; Object.entries(values).forEach(([key, value]) => { const labelMap = { name: "Nome", channel: "Contato", goal: "Objetivo", budget: "Budget", deadline: "Prazo", scope: "Resumo" }; const item = document.createElement("li"); item.textContent = `${labelMap[key]}: ${value}`; summaryList.appendChild(item); }); summaryBox.hidden = false; status.textContent = "Resumo gerado."; }); copyButton.addEventListener("click", () => { copyText(summaryText, "Resumo copiado."); }); sendButton.addEventListener("click", async () => { const copied = await copyText(summaryText, "Resumo copiado e WhatsApp aberto."); const whatsappUrl = window.SiteApp && typeof window.SiteApp.getWhatsAppUrl === "function" ? window.SiteApp.getWhatsAppUrl(summaryText) : `https://wa.me/5512997321701?text=${encodeURIComponent(summaryText)}`; if (!copied) { status.textContent = "WhatsApp aberto com a mensagem pronta."; } window.open(whatsappUrl, "_blank", "noopener"); }); }());</script>
+<script src="../shared/analytics-lazy.js" defer data-gtag-id="G-TWGDBN2L37" data-fb-pixel-id="1304637464933404"></script>
+</body>
+
+</html>

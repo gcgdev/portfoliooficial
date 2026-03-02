@@ -1,1 +1,405 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="B2B lead capture demo with qualification and a mini CRM to organize leads, follow-up and proposals without a backend."><meta name="theme-color" content="#090a0f"><link rel="icon" type="image/png" href="../../favicon.png"><title>GCGDEV | Demo 04 Leads Board</title><meta property="og:title" content="GCGDEV | Demo 04 Leads Board"><meta property="og:description" content="B2B landing page with a front-only form and mini CRM to organize the commercial pipeline."><meta property="og:type" content="website"><link rel="canonical" href="/"><meta property="og:url" content="/"><link rel="stylesheet" href="../../assets/css/main.css"><link rel="stylesheet" href="../../shared/demo-shell.css"><style>:root{--accent:#4fd7ff;--accent-rgb:79,215,255}.crm-demo,.crm-hero,.crm-fit-grid,.crm-layout,.crm-board,.crm-columns{display:grid;gap:18px}.crm-hero{grid-template-columns:minmax(0,0.9fr)minmax(340px,1.1fr);align-items:start}.crm-fit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.crm-layout{grid-template-columns:minmax(320px,0.42fr)minmax(0,0.58fr);align-items:start}.crm-copy h1{max-width:10ch;margin-bottom:12px}.crm-copy.lead,.crm-note,.crm-field label,.crm-empty,.crm-card p,.crm-meta,.crm-status,.crm-storage-note{color:var(--color-muted)}.crm-form{display:grid;gap:14px}.crm-field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.crm-field{display:grid;gap:8px}.crm-field label{font-size:0.92rem}.crm-field input,.crm-field select{width:100%;min-height:48px;padding:0 14px;border:1px solid var(--color-border);border-radius:16px;color:var(--color-text);background:rgba(255,255,255,0.05)}.crm-field input::placeholder{color:#97a0b5}.crm-inline{display:flex;flex-wrap:wrap;gap:10px}.crm-status{margin:0;min-height:22px;font-size:0.92rem}.crm-columns{grid-template-columns:repeat(4,minmax(220px,1fr));align-items:start;overflow-x:auto}.crm-column{min-height:420px;display:grid;align-content:start;gap:12px}.crm-column-header{display:flex;justify-content:space-between;gap:10px;align-items:center}.crm-count{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--color-line);background:rgba(255,255,255,0.03);color:var(--color-muted);font-size:0.9rem;font-weight:700}.crm-dropzone{min-height:300px;display:grid;align-content:start;gap:12px;padding:12px;border:1px dashed rgba(255,255,255,0.12);border-radius:var(--radius-sm);background:rgba(255,255,255,0.02);transition:border-color 0.18s ease,background-color 0.18s ease}.crm-dropzone.is-over{border-color:rgba(255,196,120,0.48);background:rgba(255,196,120,0.08)}.crm-card{padding:14px;border:1px solid var(--color-line);border-radius:16px;background:rgba(255,255,255,0.04);cursor:grab}.crm-card:active{cursor:grabbing}.crm-card strong{display:block;margin-bottom:6px}.crm-tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.crm-tag{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border-radius:999px;border:1px solid var(--color-line);background:rgba(255,255,255,0.03);color:var(--color-muted);font-size:0.84rem}.crm-empty{margin:0;font-size:0.92rem}.crm-mini-note{margin:0;font-size:0.88rem;color:var(--color-muted)}.crm-cta-band{display:flex;justify-content:space-between;align-items:end;gap:18px}@media(max-width:1080px){.crm-hero,.crm-layout{grid-template-columns:1fr}}@media(max-width:760px){.crm-fit-grid,.crm-field-grid,.crm-cta-band{grid-template-columns:1fr;display:grid}.crm-inline{display:grid}.crm-inline.button,.crm-cta-band.button{width:100%}}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-TWGDBN2L37"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TWGDBN2L37');</script><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1304637464933404');fbq('track','PageView');</script></head><body class="demo-page theme-leads"><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1304637464933404&ev=PageView&noscript=1" /></noscript><header class="demo-topbar"><div class="container"><a class="button button-secondary" href="../../en/index.html">Back to GCGDEV</a><div class="demo-actions"><a class="button button-secondary" href="../../en/pages/contact.html">Contact</a><a class="button button-primary" href="https://wa.me/5512997321701" data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel like this</a></div></div></header><main class="demo-shell"><section class="section"><div class="container crm-demo"><div class="crm-hero"><article class="card crm-copy" data-reveal><span class="badge">Demo 04</span><h1>Capture better leads and organize the funnel before they slip away.</h1><p class="lead">Short B2B landing page, objective qualification and a mini CRM to speed up follow-up and proposals.</p><div class="button-row"><a class="button button-primary" href="https://wa.me/5512997321701" data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel like this</a><a class="button button-secondary" href="#qualification">Try the flow</a></div><div class="chip-row"><span class="chip">Local form</span><span class="chip">Kanban with drag and drop</span><span class="chip">Local persistence</span></div></article><div class="crm-fit-grid"><article class="card" data-reveal><p class="eyebrow">Who it fits</p><h3>An operation that needs clarity</h3><p>B2B teams with leads coming in, follow-up happening and proposals needing more order.</p></article><article class="card" data-reveal><p class="eyebrow">Who it does not fit</p><h3>Teams that will not act</h3><p>If there is no minimum process or no interest in organizing the pipeline, this base will not solve it alone.</p></article></div></div><div class="crm-layout"><section class="card" id="qualification" data-reveal aria-labelledby="qualification-title"><div><p class="eyebrow" id="qualification-title">Qualification</p><h2>Fill in the details and create the lead in the CRM.</h2><p class="crm-note">Everything is local. No backend. `localStorage` when available.</p></div><form class="crm-form" id="lead-form"><div class="crm-field-grid"><div class="crm-field"><label for="lead-niche">Niche</label><select id="lead-niche" name="niche" required><option value="">Select</option><option>Consulting</option><option>B2B Software</option><option>Local services</option><option>Education</option></select></div><div class="crm-field"><label for="lead-goal">Goal</label><select id="lead-goal" name="goal" required><option value="">Select</option><option>Generate more leads</option><option>Qualify better</option><option>Organize follow-up</option><option>Speed up proposals</option></select></div></div><div class="crm-field-grid"><div class="crm-field"><label for="lead-budget">Budget range</label><select id="lead-budget" name="budget" required><option value="">Select</option><option>Up to R$ 2k</option><option>R$ 2k to R$ 5k</option><option>R$ 5k to R$ 10k</option><option>Above R$ 10k</option></select></div><div class="crm-field"><label for="lead-deadline">Timeline</label><select id="lead-deadline" name="deadline" required><option value="">Select</option><option>Urgent</option><option>7 to 15 days</option><option>This month</option><option>No rush</option></select></div></div><div class="crm-field"><label for="lead-contact">Contact</label><input id="lead-contact" name="contact" type="text" placeholder="WhatsApp or email" required></div><div class="crm-inline"><button class="button button-primary" type="submit">Create lead in CRM</button><button class="button button-secondary" type="button" id="clear-storage">Clear simulation</button></div><p class="crm-status" id="crm-status" aria-live="polite"></p><p class="crm-storage-note">Cards can be dragged between columns to show the next step.</p></form></section><section class="crm-board" data-reveal aria-labelledby="board-title"><div class="section-head"><div><p class="eyebrow" id="board-title">Mini CRM</p><h2>Simple pipeline to act on the next step.</h2></div></div><div class="crm-columns" id="crm-columns"><article class="card crm-column" data-column="new"><div class="crm-column-header"><h3>New</h3><span class="crm-count" data-count="new">0</span></div><div class="crm-dropzone" data-dropzone="new"></div></article><article class="card crm-column" data-column="contact"><div class="crm-column-header"><h3>Contact</h3><span class="crm-count" data-count="contact">0</span></div><div class="crm-dropzone" data-dropzone="contact"></div></article><article class="card crm-column" data-column="proposal"><div class="crm-column-header"><h3>Proposal</h3><span class="crm-count" data-count="proposal">0</span></div><div class="crm-dropzone" data-dropzone="proposal"></div></article><article class="card crm-column" data-column="closed"><div class="crm-column-header"><h3>Closed</h3><span class="crm-count" data-count="closed">0</span></div><div class="crm-dropzone" data-dropzone="closed"></div></article></div></section></div><section><div class="card crm-cta-band" data-reveal><div><p class="eyebrow">Contextual CTA</p><h2>I want a funnel like this.</h2><p class="crm-note">Lean capture, qualified leads and a visual pipeline for the team to move faster.</p></div><div class="button-row"><a class="button button-primary" href="https://wa.me/5512997321701" data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel like this</a><a class="button button-secondary" href="../../en/index.html">Back to GCGDEV</a></div></div></section></div></section></main><footer class="demo-footer"><div class="container footer-bar"><p>Front-only demo. Funnel and CRM simulated locally.</p><a href="../../en/pages/privacy.html">Privacy</a></div></footer><script src="../../assets/js/main.js" defer></script><script src="../../shared/demo-shell.js" defer></script><script>(function(){const storageKey="portfolio-demo-leads";const form=document.getElementById("lead-form");const status=document.getElementById("crm-status");const clearButton=document.getElementById("clear-storage");const dropzones=Array.from(document.querySelectorAll("[data-dropzone]"));const counters=Array.from(document.querySelectorAll("[data-count]"));const stageLabels={new:"New",contact:"Contact",proposal:"Proposal",closed:"Closed"};let leads=[];let draggedId=null;function loadLeads(){try{const saved=window.localStorage.getItem(storageKey);leads=saved?JSON.parse(saved):[];}catch(error){leads=[];}}function saveLeads(){try{window.localStorage.setItem(storageKey,JSON.stringify(leads));}catch(error){}}function createCardMarkup(lead){const card=document.createElement("article");const title=document.createElement("strong");const copy=document.createElement("p");const meta=document.createElement("p");const tags=document.createElement("div");card.className="crm-card";card.draggable=true;card.dataset.leadId=lead.id;title.textContent=lead.contact;copy.textContent=`${lead.niche} | ${lead.goal}`;meta.className="crm-meta";meta.textContent=`${lead.budget} | ${lead.deadline}`;tags.className="crm-tag-row";[lead.niche,lead.goal].forEach((item)=>{const tag=document.createElement("span");tag.className="crm-tag";tag.textContent=item;tags.appendChild(tag);});card.appendChild(title);card.appendChild(copy);card.appendChild(meta);card.appendChild(tags);card.addEventListener("dragstart",()=>{draggedId=lead.id;});card.addEventListener("dragend",()=>{draggedId=null;dropzones.forEach((zone)=>zone.classList.remove("is-over"));});return card;}function renderCounts(){counters.forEach((counter)=>{const column=counter.dataset.count;counter.textContent=String(leads.filter((lead)=>lead.stage===column).length);});}function renderBoard(){dropzones.forEach((zone)=>{const stage=zone.dataset.dropzone;zone.innerHTML="";const stageLeads=leads.filter((lead)=>lead.stage===stage);if(!stageLeads.length){const empty=document.createElement("p");empty.className="crm-empty";empty.textContent="No leads in this stage yet.";zone.appendChild(empty);return;}stageLeads.forEach((lead)=>{zone.appendChild(createCardMarkup(lead));});});renderCounts();}function moveLead(id,stage){leads=leads.map((lead)=>{if(lead.id===id){return{...lead,stage:stage};}return lead;});saveLeads();renderBoard();}dropzones.forEach((zone)=>{zone.addEventListener("dragover",(event)=>{event.preventDefault();zone.classList.add("is-over");});zone.addEventListener("dragleave",()=>{zone.classList.remove("is-over");});zone.addEventListener("drop",(event)=>{event.preventDefault();zone.classList.remove("is-over");if(!draggedId){return;}moveLead(draggedId,zone.dataset.dropzone);status.textContent=`Lead moved to ${stageLabels[zone.dataset.dropzone] || zone.dataset.dropzone}.`;});});form.addEventListener("submit",(event)=>{event.preventDefault();const formData=new FormData(form);const lead={id:String(Date.now()),niche:String(formData.get("niche")||""),goal:String(formData.get("goal")||""),budget:String(formData.get("budget")||""),deadline:String(formData.get("deadline")||""),contact:String(formData.get("contact")||"").trim(),stage:"new"};if(!lead.niche||!lead.goal||!lead.budget||!lead.deadline||!lead.contact){status.textContent="Fill in every field to create the lead.";return;}leads.unshift(lead);saveLeads();renderBoard();form.reset();status.textContent="Lead created and sent to the New column.";});clearButton.addEventListener("click",()=>{leads=[];saveLeads();renderBoard();status.textContent="Simulation cleared.";});loadLeads();renderBoard();}());</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="B2B lead capture demo with qualification and a mini CRM to organize leads, follow-up and proposals without a backend.">
+    <meta name="theme-color" content="#090a0f">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <title>GCGDEV | Demo 04 Leads Board</title>
+    <meta property="og:title" content="GCGDEV | Demo 04 Leads Board">
+    <meta property="og:description"
+        content="B2B landing page with a front-only form and mini CRM to organize the commercial pipeline.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://gcgdev.com.br/demos/demo-04-leads/index-en.html">
+    <meta property="og:url" content="https://gcgdev.com.br/demos/demo-04-leads/index-en.html">
+    <link rel="preload" href="../../assets/css/main.css?v=20260302" as="style">
+    <link rel="stylesheet" href="../../assets/css/main.css?v=20260302" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../../assets/css/main.css?v=20260302"></noscript>
+    <link rel="preload" href="../../shared/demo-shell.css?v=20260302" as="style">
+    <link rel="stylesheet" href="../../shared/demo-shell.css?v=20260302" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../../shared/demo-shell.css?v=20260302"></noscript>
+    <style>
+        :root {
+            --accent: #4fd7ff;
+            --accent-rgb: 79, 215, 255
+        }
+
+        .crm-demo,
+        .crm-hero,
+        .crm-fit-grid,
+        .crm-layout,
+        .crm-board,
+        .crm-columns {
+            display: grid;
+            gap: 18px
+        }
+
+        .crm-hero {
+            grid-template-columns: minmax(0, 0.9fr)minmax(340px, 1.1fr);
+            align-items: start
+        }
+
+        .crm-fit-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .crm-layout {
+            grid-template-columns: minmax(320px, 0.42fr)minmax(0, 0.58fr);
+            align-items: start
+        }
+
+        .crm-copy h1 {
+            max-width: 10ch;
+            margin-bottom: 12px
+        }
+
+        .crm-copy.lead,
+        .crm-note,
+        .crm-field label,
+        .crm-empty,
+        .crm-card p,
+        .crm-meta,
+        .crm-status,
+        .crm-storage-note {
+            color: var(--color-muted)
+        }
+
+        .crm-form {
+            display: grid;
+            gap: 14px
+        }
+
+        .crm-field-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px
+        }
+
+        .crm-field {
+            display: grid;
+            gap: 8px
+        }
+
+        .crm-field label {
+            font-size: 0.92rem
+        }
+
+        .crm-field input,
+        .crm-field select {
+            width: 100%;
+            min-height: 48px;
+            padding: 0 14px;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            color: var(--color-text);
+            background: rgba(255, 255, 255, 0.05)
+        }
+
+        .crm-field input::placeholder {
+            color: #97a0b5
+        }
+
+        .crm-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .crm-status {
+            margin: 0;
+            min-height: 22px;
+            font-size: 0.92rem
+        }
+
+        .crm-columns {
+            grid-template-columns: repeat(4, minmax(220px, 1fr));
+            align-items: start;
+            overflow-x: auto
+        }
+
+        .crm-column {
+            min-height: 420px;
+            display: grid;
+            align-content: start;
+            gap: 12px
+        }
+
+        .crm-column-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center
+        }
+
+        .crm-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 32px;
+            height: 32px;
+            padding: 0 10px;
+            border-radius: 999px;
+            border: 1px solid var(--color-line);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--color-muted);
+            font-size: 0.9rem;
+            font-weight: 700
+        }
+
+        .crm-dropzone {
+            min-height: 300px;
+            display: grid;
+            align-content: start;
+            gap: 12px;
+            padding: 12px;
+            border: 1px dashed rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.02);
+            transition: border-color 0.18s ease, background-color 0.18s ease
+        }
+
+        .crm-dropzone.is-over {
+            border-color: rgba(255, 196, 120, 0.48);
+            background: rgba(255, 196, 120, 0.08)
+        }
+
+        .crm-card {
+            padding: 14px;
+            border: 1px solid var(--color-line);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.04);
+            cursor: grab
+        }
+
+        .crm-card:active {
+            cursor: grabbing
+        }
+
+        .crm-card strong {
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .crm-tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px
+        }
+
+        .crm-tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 28px;
+            padding: 0 10px;
+            border-radius: 999px;
+            border: 1px solid var(--color-line);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--color-muted);
+            font-size: 0.84rem
+        }
+
+        .crm-empty {
+            margin: 0;
+            font-size: 0.92rem
+        }
+
+        .crm-mini-note {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--color-muted)
+        }
+
+        .crm-cta-band {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 18px
+        }
+
+        @media(max-width:1080px) {
+
+            .crm-hero,
+            .crm-layout {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:760px) {
+
+            .crm-fit-grid,
+            .crm-field-grid,
+            .crm-cta-band {
+                grid-template-columns: 1fr;
+                display: grid
+            }
+
+            .crm-inline {
+                display: grid
+            }
+
+            .crm-inline.button,
+            .crm-cta-band.button {
+                width: 100%
+            }
+        }
+    </style>
+    
+</head>
+
+<body class="demo-page theme-leads">
+    <header class="demo-topbar">
+        <div class="container"><a class="button button-secondary" href="../../en/index.html">Back to GCGDEV</a>
+            <div class="demo-actions"><a class="button button-secondary"
+                    href="../../en/pages/contact.html">Contact</a><a class="button button-primary"
+                    href="https://wa.me/5512997321701" data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel
+                    like this</a></div>
+        </div>
+    </header>
+    <main class="demo-shell">
+        <section class="section">
+            <div class="container crm-demo">
+                <div class="crm-hero">
+                    <article class="card crm-copy" data-reveal><span class="badge">Demo 04</span>
+                        <h1>Capture better leads and organize the funnel before they slip away.</h1>
+                        <p class="lead">Short B2B landing page, objective qualification and a mini CRM to speed up
+                            follow-up and proposals.</p>
+                        <div class="button-row"><a class="button button-primary" href="https://wa.me/5512997321701"
+                                data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel like this</a><a
+                                class="button button-secondary" href="#qualification">Try the flow</a></div>
+                        <div class="chip-row"><span class="chip">Local form</span><span class="chip">Kanban with drag
+                                and drop</span><span class="chip">Local persistence</span></div>
+                    </article>
+                    <div class="crm-fit-grid">
+                        <article class="card" data-reveal>
+                            <p class="eyebrow">Who it fits</p>
+                            <h3>An operation that needs clarity</h3>
+                            <p>B2B teams with leads coming in, follow-up happening and proposals needing more order.</p>
+                        </article>
+                        <article class="card" data-reveal>
+                            <p class="eyebrow">Who it does not fit</p>
+                            <h3>Teams that will not act</h3>
+                            <p>If there is no minimum process or no interest in organizing the pipeline, this base will
+                                not solve it alone.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="crm-layout">
+                    <section class="card" id="qualification" data-reveal aria-labelledby="qualification-title">
+                        <div>
+                            <p class="eyebrow" id="qualification-title">Qualification</p>
+                            <h2>Fill in the details and create the lead in the CRM.</h2>
+                            <p class="crm-note">Everything is local. No backend. `localStorage` when available.</p>
+                        </div>
+                        <form class="crm-form" id="lead-form">
+                            <div class="crm-field-grid">
+                                <div class="crm-field"><label for="lead-niche">Niche</label><select id="lead-niche"
+                                        name="niche" required>
+                                        <option value="">Select</option>
+                                        <option>Consulting</option>
+                                        <option>B2B Software</option>
+                                        <option>Local services</option>
+                                        <option>Education</option>
+                                    </select></div>
+                                <div class="crm-field"><label for="lead-goal">Goal</label><select id="lead-goal"
+                                        name="goal" required>
+                                        <option value="">Select</option>
+                                        <option>Generate more leads</option>
+                                        <option>Qualify better</option>
+                                        <option>Organize follow-up</option>
+                                        <option>Speed up proposals</option>
+                                    </select></div>
+                            </div>
+                            <div class="crm-field-grid">
+                                <div class="crm-field"><label for="lead-budget">Budget range</label><select
+                                        id="lead-budget" name="budget" required>
+                                        <option value="">Select</option>
+                                        <option>Up to R$ 2k</option>
+                                        <option>R$ 2k to R$ 5k</option>
+                                        <option>R$ 5k to R$ 10k</option>
+                                        <option>Above R$ 10k</option>
+                                    </select></div>
+                                <div class="crm-field"><label for="lead-deadline">Timeline</label><select
+                                        id="lead-deadline" name="deadline" required>
+                                        <option value="">Select</option>
+                                        <option>Urgent</option>
+                                        <option>7 to 15 days</option>
+                                        <option>This month</option>
+                                        <option>No rush</option>
+                                    </select></div>
+                            </div>
+                            <div class="crm-field"><label for="lead-contact">Contact</label><input id="lead-contact"
+                                    name="contact" type="text" placeholder="WhatsApp or email" required></div>
+                            <div class="crm-inline"><button class="button button-primary" type="submit">Create lead in
+                                    CRM</button><button class="button button-secondary" type="button"
+                                    id="clear-storage">Clear simulation</button></div>
+                            <p class="crm-status" id="crm-status" aria-live="polite"></p>
+                            <p class="crm-storage-note">Cards can be dragged between columns to show the next step.</p>
+                        </form>
+                    </section>
+                    <section class="crm-board" data-reveal aria-labelledby="board-title">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow" id="board-title">Mini CRM</p>
+                                <h2>Simple pipeline to act on the next step.</h2>
+                            </div>
+                        </div>
+                        <div class="crm-columns" id="crm-columns">
+                            <article class="card crm-column" data-column="new">
+                                <div class="crm-column-header">
+                                    <h3>New</h3><span class="crm-count" data-count="new">0</span>
+                                </div>
+                                <div class="crm-dropzone" data-dropzone="new"></div>
+                            </article>
+                            <article class="card crm-column" data-column="contact">
+                                <div class="crm-column-header">
+                                    <h3>Contact</h3><span class="crm-count" data-count="contact">0</span>
+                                </div>
+                                <div class="crm-dropzone" data-dropzone="contact"></div>
+                            </article>
+                            <article class="card crm-column" data-column="proposal">
+                                <div class="crm-column-header">
+                                    <h3>Proposal</h3><span class="crm-count" data-count="proposal">0</span>
+                                </div>
+                                <div class="crm-dropzone" data-dropzone="proposal"></div>
+                            </article>
+                            <article class="card crm-column" data-column="closed">
+                                <div class="crm-column-header">
+                                    <h3>Closed</h3><span class="crm-count" data-count="closed">0</span>
+                                </div>
+                                <div class="crm-dropzone" data-dropzone="closed"></div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                <section>
+                    <div class="card crm-cta-band" data-reveal>
+                        <div>
+                            <p class="eyebrow">Contextual CTA</p>
+                            <h2>I want a funnel like this.</h2>
+                            <p class="crm-note">Lean capture, qualified leads and a visual pipeline for the team to move
+                                faster.</p>
+                        </div>
+                        <div class="button-row"><a class="button button-primary" href="https://wa.me/5512997321701"
+                                data-wa-context="demo" data-wa-demo="Leads Board">I want a funnel like this</a><a
+                                class="button button-secondary" href="../../en/index.html">Back to GCGDEV</a></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="demo-footer">
+        <div class="container footer-bar">
+            <p>Front-only demo. Funnel and CRM simulated locally.</p><a href="../../en/pages/privacy.html">Privacy</a>
+        </div>
+    </footer>
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../shared/demo-shell.js" defer></script>
+    <script>(function () { const storageKey = "portfolio-demo-leads"; const form = document.getElementById("lead-form"); const status = document.getElementById("crm-status"); const clearButton = document.getElementById("clear-storage"); const dropzones = Array.from(document.querySelectorAll("[data-dropzone]")); const counters = Array.from(document.querySelectorAll("[data-count]")); const stageLabels = { new: "New", contact: "Contact", proposal: "Proposal", closed: "Closed" }; let leads = []; let draggedId = null; function loadLeads() { try { const saved = window.localStorage.getItem(storageKey); leads = saved ? JSON.parse(saved) : []; } catch (error) { leads = []; } } function saveLeads() { try { window.localStorage.setItem(storageKey, JSON.stringify(leads)); } catch (error) { } } function createCardMarkup(lead) { const card = document.createElement("article"); const title = document.createElement("strong"); const copy = document.createElement("p"); const meta = document.createElement("p"); const tags = document.createElement("div"); card.className = "crm-card"; card.draggable = true; card.dataset.leadId = lead.id; title.textContent = lead.contact; copy.textContent = `${lead.niche} | ${lead.goal}`; meta.className = "crm-meta"; meta.textContent = `${lead.budget} | ${lead.deadline}`; tags.className = "crm-tag-row";[lead.niche, lead.goal].forEach((item) => { const tag = document.createElement("span"); tag.className = "crm-tag"; tag.textContent = item; tags.appendChild(tag); }); card.appendChild(title); card.appendChild(copy); card.appendChild(meta); card.appendChild(tags); card.addEventListener("dragstart", () => { draggedId = lead.id; }); card.addEventListener("dragend", () => { draggedId = null; dropzones.forEach((zone) => zone.classList.remove("is-over")); }); return card; } function renderCounts() { counters.forEach((counter) => { const column = counter.dataset.count; counter.textContent = String(leads.filter((lead) => lead.stage === column).length); }); } function renderBoard() { dropzones.forEach((zone) => { const stage = zone.dataset.dropzone; zone.innerHTML = ""; const stageLeads = leads.filter((lead) => lead.stage === stage); if (!stageLeads.length) { const empty = document.createElement("p"); empty.className = "crm-empty"; empty.textContent = "No leads in this stage yet."; zone.appendChild(empty); return; } stageLeads.forEach((lead) => { zone.appendChild(createCardMarkup(lead)); }); }); renderCounts(); } function moveLead(id, stage) { leads = leads.map((lead) => { if (lead.id === id) { return { ...lead, stage: stage }; } return lead; }); saveLeads(); renderBoard(); } dropzones.forEach((zone) => { zone.addEventListener("dragover", (event) => { event.preventDefault(); zone.classList.add("is-over"); }); zone.addEventListener("dragleave", () => { zone.classList.remove("is-over"); }); zone.addEventListener("drop", (event) => { event.preventDefault(); zone.classList.remove("is-over"); if (!draggedId) { return; } moveLead(draggedId, zone.dataset.dropzone); status.textContent = `Lead moved to ${stageLabels[zone.dataset.dropzone] || zone.dataset.dropzone}.`; }); }); form.addEventListener("submit", (event) => { event.preventDefault(); const formData = new FormData(form); const lead = { id: String(Date.now()), niche: String(formData.get("niche") || ""), goal: String(formData.get("goal") || ""), budget: String(formData.get("budget") || ""), deadline: String(formData.get("deadline") || ""), contact: String(formData.get("contact") || "").trim(), stage: "new" }; if (!lead.niche || !lead.goal || !lead.budget || !lead.deadline || !lead.contact) { status.textContent = "Fill in every field to create the lead."; return; } leads.unshift(lead); saveLeads(); renderBoard(); form.reset(); status.textContent = "Lead created and sent to the New column."; }); clearButton.addEventListener("click", () => { leads = []; saveLeads(); renderBoard(); status.textContent = "Simulation cleared."; }); loadLeads(); renderBoard(); }());</script>
+<script src="../../shared/analytics-lazy.js" defer data-gtag-id="G-TWGDBN2L37" data-fb-pixel-id="1304637464933404"></script>
+</body>
+
+</html>
