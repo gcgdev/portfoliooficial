@@ -1,0 +1,1 @@
+(function(){function initDemoShell(){document.documentElement.classList.add("demo-ready");}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",initDemoShell,{once:true});}else{initDemoShell();}}());
